@@ -88,12 +88,13 @@ public class huyen {
 	 private static  String iyekthis(String arg){
 	    
 //		    arg="ag\\kAx";      
-	        arg=arg+"*####*Dictionary﴿s﴾ꯀ﴿K﴾ꯁ﴿m﴾ꯂ﴿a﴾ꯃ﴿w﴾ꯄ﴿e﴾ꯅ﴿v﴾ꯆ﴿f﴾ꯇ﴿Z﴾ꯉ﴿F﴾ꯊ﴿_﴾ꯋ﴿\\﴾ꯌ﴿o﴾ꯍ﴿B﴾ꯎ﴿T﴾ꯏ﴿W﴾ꯐ﴿x﴾ꯒ﴿j﴾ꯔ﴿q﴾ꯕ﴿r﴾ꯗ﴿d﴾ꯛ﴿M﴾ꯜ﴿A﴾ꯝ﴿N﴾ꯞ﴿E﴾ꯟ﴿G﴾ꯠ﴿i﴾ꯡ﴿O﴾ꯣ﴿g﴾ꯤ﴿k﴾ꯥ﴿l﴾ꯦ﴿y﴾ꯧ﴿b﴾ꯨ﴿p﴾ꯩ﴿﴾ꯪ﴿1﴾꯱﴿2﴾꯲﴿3﴾꯳﴿4﴾꯴﴿5﴾꯵﴿6﴾꯶﴿7﴾꯷﴿8﴾꯸﴿9﴾꯹﴿0﴾꯰﴿!﴾꯫﴿[﴾ꯑ﴿S﴾ꯈ﴿z﴾ꯚ﴿D﴾꯭﴿c﴾ꯖ﴿I﴾ꯪ﴿?﴾꫱﴿,﴾꫰﴿";
+	        arg=arg+"*####*Dictionary﴿s﴾ꯀ﴿K﴾ꯁ﴿m﴾ꯂ﴿a﴾ꯃ﴿w﴾ꯄ﴿e﴾ꯅ﴿v﴾ꯆ﴿f﴾ꯇ﴿Z﴾ꯉ﴿F﴾ꯊ﴿_﴾ꯋ﴿\\﴾ꯌ﴿o﴾ꯍ﴿B﴾ꯎ﴿T﴾ꯏ﴿W﴾ꯐ﴿x﴾ꯒ﴿j﴾ꯔ﴿q﴾ꯕ﴿r﴾ꯗ﴿d﴾ꯛ﴿M﴾ꯜ﴿A﴾ꯝ﴿N﴾ꯞ﴿E﴾ꯟ﴿G﴾ꯠ﴿i﴾ꯡ﴿O﴾ꯣ﴿g﴾ꯤ﴿k﴾ꯥ﴿l﴾ꯦ﴿y﴾ꯧ﴿b﴾ꯨ﴿p﴾ꯩ﴿﴾ꯪ﴿1﴾꯱﴿2﴾꯲﴿3﴾꯳﴿4﴾꯴﴿5﴾꯵﴿6﴾꯶﴿7﴾꯷﴿8﴾꯸﴿9﴾꯹﴿0﴾꯰﴿!﴾꯫﴿[﴾ꯑ﴿S﴾ꯈ﴿z﴾ꯚ﴿D﴾꯭﴿c﴾ꯖ﴿I﴾ꯪ﴿?﴾꫱﴿,﴾꫰﴿C﴾ꯓ﴿X﴾ꯘ﴿R﴾ꯙ﴿";
 	        arg=arg.replaceAll("(?s)(.)(?=.*﴿\\1﴾(.*?)﴿)","$2");                                                 //here leter like "ch","dh","bh" are converted to single letter like ç,ð,v and so on
 	       String[] seperate=arg.split("\\*####\\*");                                                                         //here the *####*Dictio........... is remove
 	        arg=seperate[0];                                                                                                        // upto here input word "KYaamgei hairiba maphamsi" to "ãk-꯭ꯌâmgã håꯔiba mafamsi" [no change because the above two line is for handlng "r" in different words]
 //	       System.out.println(arg);
 	        return arg;
+	       
 
 	    }
 
